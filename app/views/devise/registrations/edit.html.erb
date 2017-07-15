@@ -13,23 +13,27 @@
         <div class="form-group">
           <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Adresse e-mail" %>
         </div>
+        
+        <div class="form-group">
+          <%= f.file_field :avatar %>
+        </div>
     
-      <div class="form-group">
-        <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Nouveau mot de passe (si vous souhaitez le changer)" %>
-      </div>
-    
-      <div class="form-group">
-        <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control", placeholder: "Confirmation du mot de passe" %>
-      </div>
-    
-      <div class="form-group">
-        <br />
-        <%= f.password_field :current_password, autocomplete: "off", class: "form-control", placeholder: "Mot de passe actuel (pour confirmer tout changement)" %>
-      </div>
-    
-      <div class="actions">
-        <%= f.submit "Enregistrer", class: "btn btn-primary" %>
-      </div>
+        <div class="form-group">
+          <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Nouveau mot de passe (si vous souhaitez le changer)" %>
+        </div>
+      
+        <div class="form-group">
+          <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control", placeholder: "Confirmation du mot de passe" %>
+        </div>
+      
+        <div class="form-group">
+          <br />
+          <%= f.password_field :current_password, autocomplete: "off", class: "form-control", placeholder: "Mot de passe actuel (pour confirmer tout changement)" %>
+        </div>
+      
+        <div class="actions">
+          <%= f.submit "Enregistrer", class: "btn btn-primary" %>
+        </div>
     <% end %>
 
   </div>
